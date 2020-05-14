@@ -1,125 +1,178 @@
 *,
-      *::after,
-      *::before {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        box-sizing: border-box;
-      }
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
 
-      body {
-        min-height: 100vh;
-        min-width: 100%;
-        line-height: 1;
-        background: hsl(0, 0%, 98%);
-        color: hsl(234, 12%, 34%);
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 16px;
-      }
-      a {
-        color: #395db8;
-        text-decoration: none;
-      }
-      a:focus {
-        color: inherit;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  line-height: 1;
+  background: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+a {
+  color: #395db8;
+  text-decoration: none;
+}
+a:focus {
+  color: inherit;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-      .uppercase {
-        text-transform: uppercase;
-      }
-      .light {
-        font-weight: 300;
-      }
-      .bold {
-        font-weight: 600;
-      }
-      .ls-15 {
-        letter-spacing: 15px;
-      }
-      .lh-3 {
-        line-height: 2;
-      }
-      .skin {
-        color: hsl(0, 36%, 70%);
-      }
+.uppercase {
+  text-transform: uppercase;
+}
+.light {
+  font-weight: 300;
+}
+.bold {
+  font-weight: 600;
+}
+.ls-15 {
+  letter-spacing: 15px;
+}
+.lh-2 {
+  line-height: 2;
+}
+.skin {
+  color: hsl(0, 36%, 70%);
+}
 
-      .container {
-        height: 100vh;
-        display: flex;
-      }
+.container {
+  height: 100vh;
+  display: flex;
+}
 
-      /* Left */
-      .container-content {
-        width: 58%;
-        background: url("./images/bg-pattern-desktop.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
+/* Left */
+.container-content {
+  width: 58%;
+  background: url("./images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-      .container-content .header {
-        width: 60%;
-        margin: 5rem auto;
-      }
-      .container-content .content {
-        width: 60%;
-        margin: 9rem auto 0 auto;
-      }
-      .container-content .content-header {
-        font-size: 4.5rem;
-      }
-      .container-content .content-description {
-        width: 85%;
-        margin-top: 2rem;
-      }
-      .container-content .content-input {
-        margin-top: 2rem;
-        position: relative;
-      }
-      .container-content .content-input input {
-        display: inline-block;
-        width: 85%;
-        height: 4rem;
-        padding: 2rem;
-        border-radius: 35px;
-        border: solid 1px hsl(0, 36%, 85%);
-        background: transparent;
-      }
-      .container-content .content-input .email-button {
-        display: inline-block;
-        border-radius: 35px;
-        color: white;
-        background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
-        border-radius: 35px;
-        position: absolute;
-        right: 70px;
-        height: 4.1rem;
-        width: 7rem;
-        text-align: center;
-      }
-      .container-content .content-input .button-icon {
-        background: url("./images/icon-arrow.svg");
-        width: 12px;
-        height: 20px;
-        margin: auto;
-      }
-      ::placeholder {
-        color: hsl(0, 36%, 85%);
-      }
+.container-content .header {
+  width: 60%;
+  margin: 5rem auto;
+}
+.container-content .content {
+  width: 60%;
+  margin: 9rem auto 0 auto;
+}
+.container-content .content .content-header {
+  font-size: 4.5rem;
+}
+.container-content .content .content-description {
+  width: 85%;
+  margin-top: 2rem;
+}
+.container-content .content .content-input {
+  margin-top: 2rem;
+  position: relative;
+}
+.container-content .content .content-input input {
+  display: inline-block;
+  width: 85%;
+  height: 4rem;
+  padding: 2rem;
+  border-radius: 35px;
+  border: solid 1px hsl(0, 36%, 85%);
+  background: transparent;
+}
+.container-content .content .content-input .email-button {
+  display: inline-block;
+  border-radius: 35px;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 74%, 74%) 100%
+  );
+  border-radius: 35px;
+  position: absolute;
+  right: 70px;
+  height: 4.1rem;
+  width: 7rem;
+  text-align: center;
+}
+.container-content .content-input .button-icon {
+  background: url("./images/icon-arrow.svg");
+  width: 12px;
+  height: 20px;
+  margin: auto;
+}
+::placeholder {
+  color: hsl(0, 36%, 85%);
+}
 
-      /* Right */
-      .container-image {
-        width: 42%;
-        background: url("./images/hero-desktop.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
+/* Right */
+.container-image {
+  width: 42%;
+  background: url("./images/hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 550px) {
+  .container {
+    display: block;
+  }
+  .container-content {
+    width: 100%;
+  }
+  .container-content .header {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .container-content .image-mobile {
+    height: 15rem;
+    background: url("./images/hero-mobile.jpg");
+  }
+  .container-content .content {
+    width: 75%;
+    margin: 5rem auto;
+  }
+  .container-content .content .content-header {
+    font-size: 2.5rem;
+    text-align: center; 
+  }
+  .container-content .content .content-description {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .container-content .content .content-input input {
+    width: 100%;
+    height: 2rem;
+    padding: 1.5rem;
+  }
+  .container-content .content .content-input .email-button {
+    height: 3.1rem;
+    width: 5rem;
+    right: 0;
+  }
+
+  .lh-2 {
+    line-height: 1.5;
+  }
+
+  .container-image {
+    width: 100%;
+    background: transparent;
+  }
+}
